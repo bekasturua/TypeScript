@@ -71,6 +71,7 @@ function printResult(result, printMode) {
     alert(result);
   }
 }
+fetch("");
 var results = [];
 var names = ["Beka"];
 buttonElement.addEventListener("click", function () {
@@ -90,3 +91,8 @@ buttonElement.addEventListener("click", function () {
   printResult(result, OutputMode.ALERT);
   // printResult(result, 'window');
 });
+function logAndRcho(val) {
+  console.log(val);
+  return val;
+}
+logAndRcho("Hi there!").split("");
