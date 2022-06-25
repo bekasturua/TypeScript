@@ -68,7 +68,9 @@ interface CalculationContainer {
 
 type CalculationResults = CalculationContainer[];
 
-const results: CalculationResults = [];
+fetch('')
+
+const results: Array<CalculationContainer> = [];
 const names = ['Beka'];
 
 buttonElement.addEventListener('click', () => {
@@ -88,3 +90,11 @@ buttonElement.addEventListener('click', () => {
   printResult(result, OutputMode.ALERT);
   // printResult(result, 'window');
 });
+
+
+function logAndRcho<T>(val: T) {
+  console.log(val)
+  return val;
+}
+
+logAndRcho<string>('Hi there!').split('');
